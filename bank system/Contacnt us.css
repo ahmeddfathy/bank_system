@@ -1,0 +1,217 @@
+/* copy */
+:root{
+    --white-color:white;
+    --background-color:rgb(124, 122, 122);
+    --box-color:#F5F5F5;
+    --black-color:black;
+    --main-color:#57c97d;
+    --background_nav-color:#E3EFED;
+    --text1-color:#6A717E;
+    --text2-color:#000000;
+    --text3-color:#FFFFFF;
+    --icon1-color:#57c97d;
+    --icon2-color:#C0C0C0;
+    --card1_gardiant1-color:#57c97d;
+    --card2_gardiant2-color:#4ADEB9;
+    --card3_gardiant3-color:#57c97d;
+    --successful_background-color:#4C5EB9;
+    --successful_icon-color:#71D9EC;
+    --btn_background-color:#F5F3F5;
+    --btn_text-color:#40CCAC;
+    --dark_color-color:#;
+}
+/* copy */
+body{
+    background-color: var(--background_nav-color);
+    /* background-color: var(--white2-color); */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.Transactions1{
+    display: flex;
+    justify-content: space-around;
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.Transactions2{
+    display: flex;
+
+    width: 430px;
+    height: 48px;
+    background-color: #0F877C;
+}
+.Transactions3{
+    display: flex;
+
+    width: 430px;
+    height: 48px;
+    background-color: #0F877C;
+}
+.Transactions4{
+    width: 430px;
+    height: 48px;
+    background-color: #0F877C;
+}
+.Transactions5{
+    width: 430px;
+    height: 48px;
+    background-color: #0F877C;
+}
+.Transactions6{
+    width: 430px;
+    height: 48px;
+    background-color:#0F877C ;
+}
+.b{
+    background-color: transparent;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-color: #0F877C;
+}
+.b:hover{
+    background-color: #0F877C;
+    box-shadow: 0 0 5px  #0F877C,0 0 25px #0F877C,0 0 50px #0F877C,0 0 200px #0F877C;
+    transition: 0.8s;
+    color: #FFFFFF;
+
+}
+button.c{
+    background-color:  transparent;
+    color: #0F877C;
+    letter-spacing: 4px;
+    border: 0;
+    height: 8%;
+    border-radius: 35px;
+    transition-duration: 0.5s;
+}
+button.c:hover{
+    background-color: #0F877C;
+    color: wheat;
+    box-shadow: 0 0 5px #0F877C ,0 0 25px #0F877C,0 0 50px #0F877C,0 0 200px #0F877C;
+    transition: 0.7s;
+    border-radius: 25px;
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button .c h4{
+    margin-top: 50%;
+}
+
+.b{
+    width: 100%;
+    height: 70px;
+}
+.c{
+    width: 80%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    margin-left: 30px;
+}
+.colorr{
+    background-color: #0F877C;
+    /* width: 360px; */
+    margin-top: 4%;
+    margin-bottom: 8%;
+    border-radius: 20px;
+    z-index: -2;
+}
+.tex{
+    margin: 30px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 25px;
+} 
+h1{
+    font-size: 50px;
+}
+ul{
+    z-index: -1;
+}
+.ball li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    border:7px solid #0F877C;
+    border-radius: 50%;
+    margin: 2px;
+    /* z-index: -1; */
+    position: absolute;
+    animation: animate 10s  linear infinite;
+    animation-fill-mode: both;
+    opacity: 0.3;
+    
+}
+.ball li:nth-child(1){
+    bottom: 1px;
+    left: 10%;
+    width: 25%;
+    height: 35%;
+    border: 20px solid #0F877C;
+    animation-delay: 1s;
+}
+.ball li:nth-child(2){
+    bottom: 1px;
+    left: 50%;
+    width: 40%;
+    height: 56%;
+    border: 50px solid #0F877C;
+    animation-delay: 2s;
+}
+.ball li:nth-child(3){
+    top: 20%;
+    left: 15%;
+    width: 5%;
+    height: 7%;
+    border: 10px solid #0F877C;
+    animation-delay: 0s;
+}
+.ball li:nth-child(4){
+    top: 10%;
+    left: 70%;
+    width: 10%;
+    height: 14%;
+    border: 50px solid #0F877C;
+    animation-delay: 5s;
+}
+.ball li:nth-child(5){
+    top: 19%;
+    left: 35%;
+    width: 20%;
+    height: 28%;
+    border: 30px solid #0F877C;
+    animation-delay: 7s;
+}
+.ball li:nth-child(6){
+    top: 30%;
+    left: 10%;
+    width: 20%;
+    height: 28%;
+    border: 30px solid #0F877C;
+    animation-delay: 9s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) translateX(0) scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(-100px) translateX(-50px) scale(0.2);
+    }
+    50%{
+        transform: translateY(0) translateX(-100px) scale(0.5);
+    }
+    75%{
+        transform: translateY(100px) translateX(-50px) scale(0.8);
+    }
+    100%{
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.3;
+    }
+}
